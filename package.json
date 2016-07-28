@@ -4,6 +4,7 @@
   "description": "Enables cached channel configurations for communicating with AppDirect.",
   "main": "/src/index.js",
   "scripts": {
+    "lint": "eslint src test",
     "coverage": "istanbul cover _mocha -- -R spec",
     "test": "mocha test -u bdd -R spec --ui bdd --recursive"
   },
@@ -17,15 +18,24 @@
     "configuration",
     "cache"
   ],
+  "homepage": "https://github.com/kaligan/ad-node-channel-configuration#readme",
   "author": {
     "name": "AppDirect",
     "url": "https://www.appdirect.com"
   },
-  "license": "ISC",
+  "contributors": [
+    {
+      "name": "Matt Nicholson",
+      "email": "matt.nicholson@appdirect.com"
+    },
+    {
+      "name": "Rahul Bir",
+      "email": "rahul.bir@appdirect.com"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/kaligan/ad-node-channel-configuration/issues"
   },
-  "homepage": "https://github.com/kaligan/ad-node-channel-configuration#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.1.1",
@@ -36,5 +46,8 @@
   },
   "dependencies": {
     "lodash": "^4.14.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   }
 }
