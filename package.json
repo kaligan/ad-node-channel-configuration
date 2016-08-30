@@ -1,0 +1,53 @@
+{
+  "name": "ad-node-channel-configuration",
+  "version": "0.0.1",
+  "description": "Enables cached channel configurations for communicating with AppDirect.",
+  "main": "/src/index.js",
+  "scripts": {
+    "lint": "eslint src test",
+    "coverage": "istanbul cover _mocha -- -R spec",
+    "test": "mocha test -u bdd -R spec --ui bdd --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaligan/ad-node-channel-configuration.git"
+  },
+  "keywords": [
+    "appdirect",
+    "channel",
+    "configuration",
+    "cache"
+  ],
+  "homepage": "https://github.com/kaligan/ad-node-channel-configuration#readme",
+  "author": {
+    "name": "AppDirect",
+    "url": "https://www.appdirect.com"
+  },
+  "contributors": [
+    {
+      "name": "Matt Nicholson",
+      "email": "matt.nicholson@appdirect.com"
+    },
+    {
+      "name": "Rahul Bir",
+      "email": "rahul.bir@appdirect.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/kaligan/ad-node-channel-configuration/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.1.1",
+    "eslint-config-airbnb-base": "^5.0.0",
+    "eslint-plugin-import": "^1.12.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "lodash": "^4.14.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
